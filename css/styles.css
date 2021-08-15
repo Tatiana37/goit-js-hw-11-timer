@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", "Times", serif;
+  font-weight: bold;
+  font-size: 60px;
+  background-color: rgb(222, 234, 241);
+}
+
+.timer {
+  display: inline-block;
+  margin-top: 50px;
+  color: rgb(246, 255, 127);
+}
+
+.field {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid rgb(175, 192, 171);
+  background: rgb(106, 217, 231);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.field:hover {
+  color: rgb(106, 217, 231);
+  background-color: rgb(246, 255, 127);
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.15);
+}
+.value {
+  display: inline-block;
+  padding: 10px;
+}
+
+.label {
+  display: block;
+  padding-top: 10px;
+  font-size: 20px;
+}
