@@ -34,7 +34,7 @@ class CountdownTimer {
         refs.seconds.textContent = `${seconds}`;
     }
 
-    stopTimer(time) {
+    updateTimer(time) {
         if (time < 0) {
             refs.timer.textContent = 'The End!';
             refs.timer.style.textAlign = `center`;
