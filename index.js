@@ -1,5 +1,5 @@
 const refs = {
-    timer: document.querySelector('#timer'),
+    timer: document.querySelector('#timer-1'),
     days: document.querySelector('[data-value="days"]'),
     hours: document.querySelector('[data-value="hours"]'),
     minutes: document.querySelector('[data-value="mins"]'),
@@ -18,6 +18,7 @@ class CountdownTimer {
         this.getTimeComponents(delta);
         this.updateTimer(delta);
     }, 1000);
+
     pad(value) {
         return String(value).padStart(2, '0');
     }
@@ -43,9 +44,11 @@ class CountdownTimer {
 
         }
     }
+
+    
 };
 
 const newTimer = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('Aug 27, 2021'),
+  targetDate: new Date('Aug 29, 2021'),
 });
